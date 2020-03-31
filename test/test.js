@@ -8,7 +8,7 @@ describe("Welcome to CI/CD Server", function() {
   describe("GET /", function() {
     it("returns status code 200", function(done) {
       request.get(base_url, function(error, response, body) {
-        assert.equal(200, response.statusCode);
+        assert.equal(201, response.statusCode);
         helloWorld.close();
         done();
       });
